@@ -27,7 +27,10 @@ html
 #header{
     height: 46px;
     background-color: black;
-    
+    position: fixed;
+    right: 0;
+    left: 0;
+    top:0;
 }
 #header .search-btn
 {   
@@ -35,11 +38,12 @@ html
     line-height: 46px;
     color: white;
     float: right;
-    cursor: pointer;
+    
 }
 #header .search-btn:hover
 {
     background-color: tomato;
+    cursor: pointer;
 }
 #nav {
     display: inline-block;
@@ -103,11 +107,13 @@ html
 }
 
 #slider{
+
+   margin-top: 46px;
    
 }
 
 #content{
-
+   
 }
 
 #footer{
