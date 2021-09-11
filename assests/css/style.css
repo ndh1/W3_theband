@@ -29,6 +29,26 @@ html
     background-color: black;
     
 }
+#header .search-btn
+{   
+    padding: 0 21px;
+    line-height: 46px;
+    color: white;
+    float: right;
+    cursor: pointer;
+}
+#header .search-btn:hover
+{
+    background-color: tomato;
+}
+#nav {
+    display: inline-block;
+}
+#nav ul
+{
+    display : inline-block;
+}
+
 #nav li
 {
     display: inline-block;
@@ -76,6 +96,10 @@ html
 #nav .subnav li
 {
     display: block;
+}
+#nav .nav-arrow-down 
+{
+    font-size: 14px;
 }
 
 #slider{
