@@ -31,6 +31,7 @@ html
     right: 0;
     left: 0;
     top:0;
+    
 }
 #header .search-btn
 {   
@@ -106,15 +107,67 @@ html
     font-size: 14px;
 }
 
-#slider{
-
+#slider
+{
+    position: relative;
    margin-top: 46px;
-   
+   padding-top: 50%;
+   background: url('/assests/img/slider/slider1.jpeg') top center / cover no-repeat;
 }
+
+#slider .text-content{
+    position: absolute;
+    width: 100%;
+    bottom: 47px;
+    color: white;
+    text-align: center;
+}
+
+#slider .text-heading{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
+}
+
 
 #content{
    
 }
+#content .content-section
+{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 64px;
+}
+#content .section-heading{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+#content .section-sub-heading{
+    text-align: center;
+    font-size: 15px;
+     
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text{
+    text-align: justify;
+    margin-top: 25px;
+    line-height: 1.4;
+}
+
+
+
 
 #footer{
 
