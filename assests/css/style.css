@@ -20,10 +20,51 @@ html
 3 Màu sắc 
 4 Kiểu dáng 
 */
-
+/*Common*/
 .clear {
     clear: both;
 }
+
+.row
+{
+    margin-left: -8px ;
+    margin-right: -8px ;
+}
+.row::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col
+{
+    float:left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-third{
+    width: 33.3333%;
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+.text-center
+{
+    text-align: center !important; 
+}
+.mt-8
+{
+    margin-top: 8px!important;
+}
+.mt-16
+{
+    margin-top: 16px!important;
+}
+
+/*Main*/
 #main{
    
 }
@@ -172,14 +213,10 @@ html
 }
 #content .member-list
 {
-    text-align: center;
+    
     margin-top: 48px;
 }
-#content .member-item
-{   
-    float: left;
-    width: 33.33%;
-}
+
 #content .member-name
 {
     font-size: 15px;
@@ -233,7 +270,8 @@ html
     margin-top: -3px;
 }
 .place-list{
-    margin: 32px -8px 32px;
+    margin-top: 32px;
+    margin-bottom: 48px;
     
 }
 
@@ -245,14 +283,6 @@ html
 {
     opacity: 0.6;
 }
-
-.tour-section .place-items{
-    float: left;
-    width: 33.3333%;
-    padding: 0 8px;
-    
-}
-
 .tour-section .place-body{
     color: black;
     background-color: white;
@@ -285,7 +315,10 @@ html
     margin: -5px 0;
     
 }
-
+.modal.open
+{
+    display: flex;
+}
 .modal{
     position: fixed;
     left: 0;
@@ -293,7 +326,7 @@ html
     bottom: 0;
     top: 0;
     background: rgba(0, 0, 0, 0.4);
-    display : flex;
+    display : none;
     align-items: center;
     justify-content: center;
     
@@ -305,6 +338,17 @@ html
     width: 900px;
     min-height: 200px;
     position: relative;
+    animation-name: modalFaceIn ;
+    animation-duration : .5s;
+}
+@keyframes modalFaceIn {
+    from {
+        
+        transform: translateY(-130);
+    } to {
+       
+        transform: translateY(0);
+    }
 }
 .modal-header
 {
@@ -375,6 +419,41 @@ html
 .modal-help a
 {
     color: #2196f3;
+}
+
+/*Contact form*/
+.contact-content{
+    margin-top: 46px;
+    
+}
+.contact-info
+{
+    font-size: 18px;
+    line-height: 1.4;
+}
+.contact-info i[class*="ti-"]
+{
+    width: 30px;
+    display: inline-block;
+}
+.contact-form
+{
+    font-size: 15px;
+}
+.contact-form .form-control
+{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.contact-form .form-submit-btn
+{
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    float: right;
+    outline: none;
 }
 
 #footer{
