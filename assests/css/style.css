@@ -63,6 +63,20 @@ html
 {
     margin-top: 16px!important;
 }
+.btn{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 11px 16px;
+    margin: -5px 0; 
+    cursor: pointer;  
+}
+
+.pull-right
+{
+    float: right !important;
+}
 
 /*Main*/
 #main{
@@ -187,7 +201,7 @@ html
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0;
+    padding: 64px 0 112px;
 }
 #content .section-heading{
     text-align: center;
@@ -271,7 +285,6 @@ html
 }
 .place-list{
     margin-top: 32px;
-    margin-bottom: 48px;
     
 }
 
@@ -306,15 +319,6 @@ html
     line-height: 1.4;
 }
 
-.tour-section .place-buy-btn{
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    padding: 11px 16px;
-    margin: -5px 0;
-    
-}
 .modal.open
 {
     display: flex;
@@ -456,6 +460,36 @@ html
     outline: none;
 }
 
-#footer{
+.map-section img
+{
+    width: 100%;
+}
 
+
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer .social-list{
+    font-size: 24px;
+    
+}
+#footer .social-list a{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .copy-right{
+    margin-top: 15px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copy-right a{
+   
+    color: rgba(0, 0, 0, 0.6);
+}
+#footer .social-list a:hover,
+#footer .copy-right a:hover{
+    opacity: 0.4;
 }
