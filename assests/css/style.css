@@ -7,6 +7,7 @@
 html
 {
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 /*
 1 Từ ngoài vào trong
@@ -90,20 +91,37 @@ html
     right: 0;
     left: 0;
     top:0;
+    overflow: hidden;
     
 }
+#header .mobile-menu-btn,
 #header .search-btn
 {   
     padding: 0 21px;
-    line-height: 46px;
-    color: white;
     float: right;
     
 }
 #header .search-btn:hover
 {
-    background-color: tomato;
+    background-color: black;
     cursor: pointer;
+}
+#header .mobile-menu-btn:hover
+{
+    background-color: #ccc;
+    
+}
+#header .mobile-menu-btn:hover .menu-icon
+{
+    color: black;
+    
+}
+#header .search-icon,
+#header .menu-icon
+{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
 }
 #nav {
     display: inline-block;
@@ -168,10 +186,10 @@ html
 
 #slider
 {
-    position: relative;
-   margin-top: 46px;
-   padding-top: 50%;
-   background: url('/assests/img/slider/slider1.jpeg') top center / cover no-repeat;
+    
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assests/img/slider/slider2.jpeg') top center / cover no-repeat;
 }
 
 #slider .text-content{
@@ -199,9 +217,12 @@ html
 #content .content-section
 {
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 #content .section-heading{
     text-align: center;
@@ -493,3 +514,4 @@ html
 #footer .copy-right a:hover{
     opacity: 0.4;
 }
+
