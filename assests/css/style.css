@@ -91,9 +91,15 @@ html
     right: 0;
     left: 0;
     top:0;
-    overflow: hidden;
-    
+    z-index: 1;
 }
+#header .mobile-menu-btn{
+    position:absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
 #header .mobile-menu-btn,
 #header .search-btn
 {   
@@ -101,6 +107,7 @@ html
     float: right;
     
 }
+
 #header .search-btn:hover
 {
     background-color: black;
@@ -109,6 +116,7 @@ html
 #header .mobile-menu-btn:hover
 {
     background-color: #ccc;
+    
     
 }
 #header .mobile-menu-btn:hover .menu-icon
@@ -193,11 +201,12 @@ html
 }
 
 #slider .text-content{
-    position: absolute;
+    
     width: 100%;
     bottom: 47px;
     color: white;
     text-align: center;
+    position: relative;
 }
 
 #slider .text-heading{

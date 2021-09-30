@@ -11,12 +11,46 @@
 /*MOBILE*/
 @media (max-width:740px)
 {
-    #nav > li 
+    #slider .text-content
     {
-        display: block;
+        position: relative;
     }
     #header .search-btn
     {
         display: none;
     }
+    #header .mobile-menu-btn
+    {
+        display: block;
+
+    }
+    #header{
+        overflow: hidden;
+    }
+    #nav
+    {
+        display: block;
+    }
+    #nav > li 
+    {
+        display: block;
+    }
+    #nav li a{
+        padding: 1px 24px;
+    }
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    #nav .subnav
+    {
+        position: initial;
+    }
+    #nav .subnav a{
+        background: #333;
+        color: white;
+        padding: 5px 41px;
+        line-height: 38px;
+    }
+    
+    
 }
