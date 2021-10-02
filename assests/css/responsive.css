@@ -11,7 +11,19 @@
 /*MOBILE*/
 @media (max-width:740px)
 {
-    
+    .s-col-full,
+    .s-full-width
+    {
+        width: 100%;
+    }
+    .s-mt-16
+    {
+        margin-top: 16px !important;
+    }
+    .s-mt-8
+    {
+        margin-top: 8px !important;
+    }
     #header .search-btn
     {
         display: none;
@@ -47,10 +59,6 @@
         color: white;
         padding: 5px 41px;
         line-height: 38px;
-    }
-    .s-col-full
-    {
-        width: 100%;
     }
     #content .member-img
     {  
