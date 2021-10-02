@@ -11,10 +11,7 @@
 /*MOBILE*/
 @media (max-width:740px)
 {
-    #slider .text-content
-    {
-        position: relative;
-    }
+    
     #header .search-btn
     {
         display: none;
@@ -51,6 +48,14 @@
         padding: 5px 41px;
         line-height: 38px;
     }
-    
+    .s-col-full
+    {
+        width: 100%;
+    }
+    #content .member-img
+    {  
+    width: 60%;
+    margin-top: 15px;
+    }
     
 }
