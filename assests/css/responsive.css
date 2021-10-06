@@ -17,6 +17,7 @@
     .contact-form .form-control
     {
         padding: 15px;
+        font-size: 16px;
     }
     .contact-info
     {
@@ -36,6 +37,10 @@
         padding: 12px 0;
         font-size: 24px;
     }
+    .btn-submit-contact
+    {
+        font-size:16px;
+    }
     
 }
 
@@ -46,7 +51,7 @@
     
 }
 /*MOBILE*/
-@media (max-width:740px)
+@media (max-width:739px)
 {
     .s-col-full,
     .s-full-width
@@ -102,10 +107,11 @@
     width: 60%;
     margin-top: 15px;
     }
-    
+
     .contact-form
     {
         margin-top: 32px;
     }
+    
     
 }

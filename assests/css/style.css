@@ -76,6 +76,8 @@ html
     padding: 11px 16px;
     margin: -5px 0; 
     cursor: pointer;  
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .pull-right
@@ -201,7 +203,7 @@ html
     
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/assests/img/slider/slider2.jpeg') top center / cover no-repeat;
+    background: url('../img/slider/slider2.jpeg') top center / cover no-repeat;
 }
 
 #slider .text-content{
@@ -221,6 +223,7 @@ html
 #slider .text-description{
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px black;
 }
 
 
@@ -502,6 +505,7 @@ html
     float: right;
     outline: none;
 }
+
 
 .map-section img
 {
